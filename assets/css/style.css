@@ -295,19 +295,33 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     font-size: 16px;
     text-transform: capitalize;
 }
-.single-about-add-info p {font-weight:  300;border:  0;padding: 0;margin-top: 3px;}
+.single-about-add-info a {
+    font-weight:  300;
+    border:  0;
+    padding: 0;
+    margin-top: 3px;
+    color: #5f77cd;
+    text-decoration: underline; 
+}
+.single-about-add-info a:hover {
+    font-weight:  300;
+    border:  0;
+    padding: 0;
+    margin-top: 3px;
+    color: #171f3b;
+}
 /*.single-about-txt*/
 
 /*.single-about-img */
-.single-about-img{position: relative;box-shadow: 0 5px 20px rgba(14,25,80,.30);}
+.single-about-img{position: relative;}
 .single-about-img:before {
     position:  absolute;
     content: " ";
     top: 0;
     left:  0;
-    width: 109%;
+    width: 100%;
     height:  100%;
-    background: rgba(31,44,108,.3);
+    
 }
 .single-about-img img {
     max-width: 500px;
@@ -322,7 +336,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     left: 0;
     width: 109%;
     height: 90px;
-    background: #1f2c6c;
+    
 }
 /*.ab-list-icon */
 .about-list-icon ul {
@@ -698,10 +712,18 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*-------------------------------------
         10. Clients
 --------------------------------------*/
-.clients {padding-top: 50px;}
+.clients {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 .clients-area {
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 100%;
     height: 250px;
 }
 .clients-area .item {padding: 0 25px;}
@@ -712,6 +734,39 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     height: auto;
     border-radius:0;
 }
+.clients-area .btn-group .btn-group-toggle .label {
+    background-color: #000;
+}
+
+.btn-group-toggle label.btn {
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin: 0px; /* Adjust margin as needed */
+  cursor: pointer;
+}
+
+.content-section {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.content-section h1{
+    margin-bottom: 20px;
+}
+
+.btn-group-lg {
+    margin-bottom: 20px;
+}
+
+
+.btn-primary {
+    background-color: #858eb8;
+    border: #506a76;
+}
+
+.link-access {
+    text-decoration: underline; 
+}
+
 
 /*-------------------------------------
         11. Contact
@@ -880,4 +935,98 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+
+
+
+/*-------------------------------------
+        [MODIF] A.  Katalog
+--------------------------------------*/
+.catalog {padding: 50px 0 100px;}
+.catalog-content {padding-top: 100px;}
+/*.single-about-txt*/
+.single-catalog-txt h3 {
+    font-size:18px;
+    color: #3c4258;
+    text-transform: initial;
+    line-height: 1.8;
+}
+.single-catalog-txt p {
+    font-size: 16px;
+    color: #999fb3;
+    padding: 35px 0 43px;
+    border-bottom: 1px solid #999fb3;
+}
+.single-catalog-add-info {
+    margin: 35px 0;
+}
+.single-catalog-add-info h3 {
+    color: #636a82;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.single-catalog-add-info a {
+    font-weight:  300;
+    border:  0;
+    padding: 0;
+    margin-top: 3px;
+    color: #5f77cd;}
+/*.single-about-txt*/
+
+/*.single-about-img */
+.single-catalog-img{position: relative;}
+.single-catalog-img:before {
+    position:  absolute;
+    content: " ";
+    top: 0;
+    left:  0;
+    width: 100%;
+    height:  100%;
+    
+}
+.single-catalog-img img {
+    max-width: 500px;
+    height: 468px;
+}
+.catalog-list-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 109%;
+    height: 90px;
+    
+}
+/*.ab-list-icon */
+.catalog-list-icon ul {
+    display: flex;
+}
+.catalog-list-icon  ul li a {
+    padding-right: 22px;
+    cursor:pointer;
+    color: #fff;
+}
+.catalog-list-icon ul li a {
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    border: 2px solid;
+    margin-left: 20px;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+}
+.catalog-list-icon ul li a i {
+    margin-left: 6px;
+}
+/*.ab-list-icon */
+
+/*.single-about-img */
+
+
+
+
 /*========================Thank you=================

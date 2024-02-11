@@ -124,4 +124,19 @@ $(document).ready(function(){
         });
 
 });	
+
+// [MODIF] A. Konten on Button Click
+
+$(function() {
+	// Show the first section by default
+	$(".content-section:first").show();
+
+	$(".btn").on("click", function() {
+	  //hide all sections
+	  $(".content-section").hide();
+	  //show the section depending on which button was clicked
+	  $("#" + $(this).attr("data-section")).show();
+	});
+  
+  });
 	
