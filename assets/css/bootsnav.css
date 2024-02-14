@@ -1376,12 +1376,12 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
 @media (max-width: 767px) {
     nav.navbar.bootsnav .navbar-header {
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 30px;
     }
     
     nav.navbar.bootsnav .navbar-nav {
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 0px;
     }
     
     .attr-nav{
